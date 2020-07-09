@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module xmlns="urn:jboss:module:1.0" name="com.ibm.mqetclient">
+<resources>
+        <resource-root path="com.ibm.mq.jar"/>
+        <resource-root path="com.ibm.mqjms.jar"/>
+        <resource-root path="com.ibm.mq.jmqi.jar"/>
+        <resource-root path="connector.jar"/>
+        <resource-root path="dhbcore.jar"/>
+        <resource-root path="com.ibm.msg.client.wmq.v6.jar"/>
+		<resource-root path="com.ibm.msg.client.jms.jar"/>
+		<resource-root path="com.ibm.mq.commonservices.jar"/>
+		<resource-root path="com.ibm.mq.headers.jar"/>
+		<resource-root path="com.ibm.mq.pcf-6.0.jar"/>
+		<resource-root path="mqcontext.jar"/>
+		<resource-root path="providerutil.jar"/>
+		<resource-root path="rmm.jar"/>
+		<resource-root path="jms.jar"/>
+		<resource-root path="jndi.jar"/>
+		<resource-root path="ldap.jar"/>
+		<resource-root path="com.ibm.mqjms.jar"/>
+		<resource-root path="fscontext.jar"/>
+		
+</resources>
+    <dependencies>
+        <module name="javax.api"/>
+        <module name="javax.jms.api"/>
+    </dependencies>
+</module>
