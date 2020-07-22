@@ -1,4 +1,4 @@
-FROM jboss/wildfly:20.0.0.Final
+FROM jboss/wildfly:20.0.1.Final
 
 WORKDIR /opt/jboss/wildfly
 
