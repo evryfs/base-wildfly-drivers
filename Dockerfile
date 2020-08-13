@@ -8,6 +8,7 @@ RUN mkdir -p modules/oracle/jdbc/main &&\
 
 # Copy container entrypoint script
 COPY --chown=jboss:root ./entrypoint.sh bin/
+RUN chmod +x bin/entrypoint.sh
 
 # Install modules
 COPY --chown=jboss:root lib/modules/oracle/jdbc/main/* modules/oracle/jdbc/main/
