@@ -6,6 +6,9 @@ WORKDIR /opt/jboss/wildfly
 RUN mkdir -p modules/oracle/jdbc/main &&\
     mkdir -p modules/com/ibm/mqgetclient/main
 
+# Copy container entrypoint script
+COPY --chown=jboss:root ./entrypoint.sh bin/
+
 # Install modules
 COPY --chown=jboss:root lib/modules/oracle/jdbc/main/* modules/oracle/jdbc/main/
 COPY --chown=jboss:root lib/modules/com/ibm/mqgetclient/main/* modules/com/ibm/mqgetclient/main/
