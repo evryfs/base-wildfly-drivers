@@ -10,7 +10,7 @@ jobs:
     #- uses: eshork/gitleaks-action@v1.0.0
     - run: echo ::set-output name=tag_name::$(head -1 Dockerfile | awk '{print $2}' | tr ':' ' '| awk '{print $2}')
       id: tagName
-    - uses: anothrNick/github-tag-action@1.28.0
+    - uses: anothrNick/github-tag-action@1.32.0
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         RELEASE_BRANCHES: master
