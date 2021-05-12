@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'skip ci')"
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.3.4
     #- uses: brpaz/hadolint-action@v1.1.0
     #- uses: eshork/gitleaks-action@v1.0.0
     - run: echo ::set-output name=tag_name::$(head -1 Dockerfile | awk '{print $2}' | tr ':' ' '| awk '{print $2}')
